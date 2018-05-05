@@ -1,0 +1,72 @@
+*{margin:0; padding:0; box-sizing: border-box; outline: none;}
+
+
+input{width: 31.5%; right: 7.5%; position: absolute; text-align: center;}
+
+.btn-locate{width: 100%; margin: 10px 0; padding: 2% 0px}
+
+.space-btn-calcular{width: 60%; display: inline-block; margin: 0px 20%; text-align: center;}
+.space-btn-calcular a{background: #007ACC; padding: 5% 25%;color: white; box-shadow: 1px 2px 1px gray; border-radius: 10%; width: 100%}
+.space-btn-calcular a:active{background: #004C7F; padding: 5% 24%; font-size: 98%; color: white; box-shadow: 0px 0px gray}
+.bnt-calcular{position: relative; border-style: outset;}
+
+p{line-height: 17pt; }
+
+
+#topo{margin: 0; padding:0%; width: 100%;}
+.cabecalho{width: 100%; padding: 0%; background: #007ACC; box-sizing: border-box;}
+.logo{width: 100%; padding: 10%; height: 0%; background: url("img/topo.png") no-repeat center; background-size: auto 80%}
+.separador{width: 100%; padding: 1%; background: #004C7F}
+
+#principal{width: 100%; padding: auto}
+.corpo{margin: 15px 4%; padding: 3.5%; background: url('img/fundo-bloco1.jpg'); border-radius: 5%;}
+
+
+#aba-modelo{padding: 2%; position: relative; top: 18px; width: 100%;}
+#modelo2{position:absolute; right: 30%}
+
+.teste2{margin: -10px 0 10px 0}
+
+.teste{width: 100%; margin-left: 8%}
+
+.mdl-1{left: -5%}
+.mdl-2{left: -5%}
+
+.nome-modelo{position: absolute; left: 15%}
+
+.box-1{background: white; text-indent: 3%; line-height: 25pt; border-radius: 5%;}
+
+.box-2{}
+
+#img-info img{width: 100%; margin: 10px 0px 0px}
+
+#rodape{width: 100%; padding: 7%; background: #004C7F}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+					Media Queries					
+@media screen and (min-width: 300px){
+	p{line-height: 17pt; font-size: 14px;}
+	
+}
+
+@media screen and (min-width: 480px){
+	p{line-height: 17pt; font-size: 20px;}
+	
+}
+
+@media screen and (min-width: 640px){
+	
+}
+
+@media screen and (min-width: 768px){
+	
+	p{font-size: 20px}
+}
+
+@media screen and (min-width: 1024px){
+	p{line-height: 30pt; font-size: 30px}
+	input{padding: 10px}
+}

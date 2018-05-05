@@ -1,0 +1,125 @@
+<DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Armadura Transversal</title>
+		<link rel="stylesheet" type="text/css" href="estilo-transversal.css">
+		<script type="text/javascript" src="js/script-transversal.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src="phonegap.js"></script>
+		
+	</head>
+
+
+	<body>
+		<header id = "topo">
+			<section class="cabecalho">
+				<a href="index.html"><h1 class="logo"></h1></a>
+			</section>
+			<div class="separador"></div>
+			
+		</header>
+
+		<main id="principal">
+			<section>
+				<br>
+				<h2 align="center">Concreto Armado</h2>
+			</section>
+
+			<section class="corpo">
+
+				<br>
+				<h3 align="center">Calculadora de Armadura Transversal</h3>
+				<br>
+
+				<h4>Modelo de Cálculo: </h4>
+				<hr>
+				<div>
+				<input id="modelo1" value = "45" class="mdl-1" type="radio" name="modelo" checked><div class="nome-modelo"><p> Modelo I (α = 90&deg; e θ = 45&deg;)</p></div>
+				<br>
+				<input class="mdl-2" type="radio" name="modelo"><div class="nome-modelo"><p> Modelo II (α = 90&deg; e 30&deg; &le; θ &le; 45&deg;)</p></div>
+
+				</div>
+					<div id="aba-modelo">
+						<div class="teste">Valor de θ: <input id="modelo2" onchange="verificaMdl()" type="number" value="45" min="30" max="45" step="1"></div>
+						<!--div class="teste2"><input id="modelo2" onchange="verificaMdl()" type="number" value="45" min="30" max="45" step="1"></div ---- essa div está errada, uma vez que se encontra abaixo, e não aninhada, da primeira-->
+					</div>
+				</div>
+
+					<script>
+						$("#aba-modelo").hide();
+
+						$(".mdl-2").click(function(){
+			    		$("#aba-modelo").show('fast');
+						});
+
+						$(".mdl-1").click(function(){
+			    		$("#aba-modelo").hide('fast');
+						});
+					</script>
+				<br>
+					<div id="img-info">
+						<img src="img/biela.png">
+					</div>
+				
+				<br>
+
+				<section>
+					<h4>Dados: </h4>
+					<hr>
+					<p>Força Cortante (KN): <input type="number" id="cortante"></p>
+					<p>Resistência - Fck (Mpa): <input type="number" id="fck"></p>
+					<p>Medida da Base - bw (cm): <input type="number" id="bw"></p>
+					<p>Altura Útil - d (cm): <input type="number" id="d"></p>
+				<hr>
+
+					<div class="btn-locate"><div class="space-btn-calcular"><a onclick="escolheModelo(); verificar()">CALCULAR</a></div></div>
+				</section>
+
+				<br>
+				<hr>
+				<br>
+
+				<section class="box-1">
+					<h4>Informações e Coeficientes</h4>
+					<hr width="90%" align="center">
+					<p>Cortante de Projeto - Vsd (KN) :    <span id="vsd" value="0"></span></p>
+					<p><span id="tipoDeCalculo"></span></p>
+					<p>Vrd2 (KN): <span id="vrd2" value="0"></span></p>
+					<p>Vc (KN): <span id="vc" value="0"></span></p>
+					<p>Vsw (KN): <span id="vsw" value="0"></span></p>
+					<hr>
+				</section>
+
+				<br>
+
+				<section class="box-1">
+					<h4>Área de Aço (mm<sup>2</sup>/m)</h4>
+					<hr width="90%" align="center">
+					<p>Transversal: <span id="areaAcoTrans" value="0"></span></p>
+
+				</section>
+
+
+				<script>
+					$(".box-1").hide();
+
+					$(".space-btn-calcular").click(function(){
+		    		$(".box-1").show('slow');
+					});
+				</script>
+
+			</section>
+		</main>
+		
+
+		<footer id="rodape">
+			<a href="transversal.html"></a>
+		</footer>
+
+	</body>
+
+</html>
