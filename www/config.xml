@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+-<widget xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets" version="1.2.0" id="com.phonegap.EngTool"> 
+
+	<name>EngTool - Concreto</name> 
+
+	<description> 
+		EngTool, aplicativo educacional desenvolvido para facilitar o entendimento e cálculos envolvidos no campo da Engenharia Civil. 
+	</description> 
+
+	<author href="http://phonegap.com" email="suporteengtool@gmail.com"> 
+		Anderson Alves de Aguiar - A3.
+	</author> 
+
+	<content src="index.html"/> 
+
+	<access origin="*"/>
+	<preference name="permissions" value="none" />
+	<preference name="orientation" value="portrait" />
+	
+	<icon src="icon.png" />
+	<icon src="icon.png" gap:platform="android" gap:qualifier="ldpi"/>
+	<icon src="icon.png" gap:platform="android" gap:qualifier="mdpi"/>
+	<icon src="icon.png" gap:platform="android" gap:qualifier="hdpi"/>
+	<icon src="icon.png" gap:platform="android" gap:qualifier="xhdpi"/>
+
+	<plugin name="cordova-plugin-splashscreen" />
+    <splash src="splash.png" />
+    <preference name="SplashScreenDelay" value="5000" />
+
+</widget>
