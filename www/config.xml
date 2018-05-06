@@ -25,7 +25,7 @@
 
 	<plugin name="cordova-plugin-splashscreen" />
    	<splash src="splash.png" />
-    	<preference name="SplashScreenDelay" value="5000" />
+    	<preference name="SplashScreenDelay" value="3000" />
 	
 	<splash platform="android" qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
 	<splash platform="android" qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
