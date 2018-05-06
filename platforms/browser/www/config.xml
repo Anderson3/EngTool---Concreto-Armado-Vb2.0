@@ -1,23 +1,36 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.EngTool" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <feature name="Camera">
-        <param name="browser-package" value="Camera" />
-    </feature>
-    <feature name="Device">
-        <param name="browser-package" value="Device" />
-    </feature>
-    <name>EngTool - Concreto Armado</name>
-    <description>
-        EngTool, aplicativo educacional desenvolvido para facilitar endimento e cálculos envolvidos em campos da engenharia Civil.
-    </description>
-    <author email="suporteengtool@gmail.com" href="http://phonegap.com">
-    	Anderson Alves de Aguiar - A3.
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
-    <icon src="icon.png" />
-    <icon gap:platform="android" gap:qualifier="ldpi" src="icon.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="icon.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="icon.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="icon.png" />
+<?xml version="1.0" encoding="UTF-8"?>
+-<widget xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets" version="1.2.0" id="com.phonegap.EngTool"> 
+
+	<name>EngTool - Concreto</name> 
+
+	<description> 
+		EngTool, aplicativo educacional desenvolvido para facilitar o entendimento e cálculos envolvidos no campo da Engenharia Civil. 
+	</description> 
+
+	<author href="http://phonegap.com" email="suporteengtool@gmail.com"> 
+		Anderson Alves de Aguiar - A3.
+	</author> 
+
+	<content src="index.html"/> 
+
+	<access origin="*"/>
+	<preference name="permissions" value="none" />
+	<preference name="orientation" value="portrait" />
+	
+	<icon src="icon.png" />
+	<icon src="icon.png" gap:platform="android" gap:qualifier="ldpi"/>
+	<icon src="icon.png" gap:platform="android" gap:qualifier="mdpi"/>
+	<icon src="icon.png" gap:platform="android" gap:qualifier="hdpi"/>
+	<icon src="icon.png" gap:platform="android" gap:qualifier="xhdpi"/>
+
+	<plugin name="cordova-plugin-splashscreen" />
+   	<splash src="splash.png" />
+    	<preference name="SplashScreenDelay" value="5000" />
+	
+	<splash platform="android" qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
+	<splash platform="android" qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+	<splash platform="android" qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+	<splash platform="android" qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
+ 
+
 </widget>
