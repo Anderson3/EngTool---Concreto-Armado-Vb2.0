@@ -8,13 +8,16 @@
     </feature>
     <name>EngTool - Concreto Armado</name>
     <description>
-        EngTool, aplicativo educacional desenvolvido para facilitar endimento e cálculos envolvidos em campos da engenharia Civil.
+        EngTool, aplicativo educacional desenvolvido para facilitar o entendimento e os Cálculos envolvidos no campos da Engenharia Civil.
     </description>
     <author email="suporteengtool@gmail.com" href="http://phonegap.com">
     	Anderson Alves de Aguiar - A3.
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <preference name="permissions" value="none" />
+	<preference name="orientation" value="portrait" />
+    
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="icon.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="icon.png" />
